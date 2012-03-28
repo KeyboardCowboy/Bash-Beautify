@@ -67,7 +67,7 @@ export REV_RED="$ESC[${DULL};${FG_YELLOW}; ${BG_RED}m"
 ##
 # Parse the GIT and SVN branches we may be on
 #
-function get_branches {
+function vcs_branch {
   local GIT=$(git_get_current_branch)
   local SVN=$(svn_get_current_branch)
   if [ -n "$GIT" ]; then
@@ -113,3 +113,6 @@ function svn_get_current_branch {
     echo $URL | sed -e 's#^'"$(svn_get_url_branches)/"'##g' | sed -e 's#/.*$##g' | awk '{print ""$1"" }'
   fi
 }
+
+# Set the prompt pattern
+export PS1="${BRIGHT_CYAN}[${CYAN}\u${BRIGHT_WHITE}@${CYAN}${TITLE}${WHITE}\$(parse_branch)${WHITE}: \w${BRIGHT_CYAN}]${NORMAL}\$ ${RESET}"
