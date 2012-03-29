@@ -4,6 +4,11 @@ Bash Beautify adds simple color support and SVN and GIT branch recognition to
 your bash prompt.
 
 --------------------------------------------------------------------------------
++ Requirements
+--------------------------------------------------------------------------------
+- If using SVN, your project must use a standard trunk/branches/tags structure.
+
+--------------------------------------------------------------------------------
 + Installation
 --------------------------------------------------------------------------------
 1. Place the .bash_beautify file in your home directory.
@@ -11,7 +16,9 @@ your bash prompt.
 
 source ~/.bash_beautify
 
-That's it!  If you would like to customzize your prompt, add the following line
+That's it!  By default GIT branches are green and SVN are yellow.
+
+If you would like to customzize your prompt, add the following line
 under the previous one and use the brief tutorial below. (It might be helpful to
 copy the one from the bottom of the actual file to start.)
 
@@ -96,3 +103,8 @@ $(vcs_branch)
 If you don't like the colors of the SVN and GIT branches, you can change those
 in the .bash_beautify file in the vcs_branches function.  I coded them in there
 to make it easier to deploy for newbies.
+
+You can also call either piece separately without any formatting:
+
+$(git_branch)
+$(svn_branch)
