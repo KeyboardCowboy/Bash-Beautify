@@ -115,4 +115,4 @@ function svn_get_current_branch {
 }
 
 # Set the prompt pattern
-export PS1="${BRIGHT_CYAN}[${CYAN}\u${BRIGHT_WHITE}@${CYAN}${TITLE}${WHITE}\$(parse_branch)${WHITE}: \w${BRIGHT_CYAN}]${NORMAL}\$ ${RESET}"
+export PS1="${BRIGHT_CYAN}[${CYAN}\u${BRIGHT_WHITE}@${CYAN}\h${WHITE}\$(vcs_branch)${WHITE}: \w${BRIGHT_CYAN}]${NORMAL}\$ ${RESET}"

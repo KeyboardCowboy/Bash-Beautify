@@ -87,7 +87,7 @@ $(vcs_branch)
 4. Spice it up with a little color.
 
    [calbrecht@localhost(7.x-1.x): /var/www/htdocs/newsite/includes]$
-   export PS1="${BRIGHT_CYAN}[${CYAN}\u${BRIGHT_WHITE}@${CYAN}${TITLE}${WHITE}\$(parse_branch)${WHITE}: \w${BRIGHT_CYAN}]${NORMAL}\$ ${RESET}"
+   export PS1="${BRIGHT_CYAN}[${CYAN}\u${BRIGHT_WHITE}@${CYAN}\h${WHITE}\$(vcs_branch)${WHITE}: \w${BRIGHT_CYAN}]${NORMAL}\$ ${RESET}"
 
 
 --------------------------------------------------------------------------------
