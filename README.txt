@@ -6,7 +6,8 @@ your bash prompt.
 --------------------------------------------------------------------------------
 + Requirements
 --------------------------------------------------------------------------------
-- If using SVN, your project must use a standard trunk/branches/tags structure.
+- If using SVN, your project must use a standard /trunk /branches /tags
+  structure.
 
 --------------------------------------------------------------------------------
 + Installation
@@ -16,7 +17,10 @@ your bash prompt.
 
 source ~/.bash_beautify
 
-That's it!  By default GIT branches are green and SVN are yellow.
+That's it!  The next time you start a bash session you should see a pretty, new
+bash prompt.
+
+By default GIT branches are green and SVN are yellow.
 
 If you would like to customzize your prompt, add the following line
 under the previous one and use the brief tutorial below. (It might be helpful to
