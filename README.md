@@ -17,7 +17,7 @@ your bash prompt.
 1. Place the .bash_beautify file in your home directory.
 2. Add the following line to the top of your .bash_profile or .bashrc file.
 
-      source ~/.bash_beautify
+      `source ~/.bash_beautify`
 
 That's it!  The next time you start a bash session you should see a pretty, new
 bash prompt.
