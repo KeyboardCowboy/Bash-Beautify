@@ -78,26 +78,26 @@ enough) version control system you are using.
 --------------------------------------------------------------------------------
 1. A basic prompt.
 
-      [calbrecht@localhost]$
-      export PS1="[\u@\h]\$"
+        [calbrecht@localhost]$
+        export PS1="[\u@\h]\$"
 
 
 2. Add the present working directory to each prompt.
 
-      [calbrecht@localhost: /var/www/htdocs/newsite/includes]$
-      export PS1="[\u@\h: \w]\$"
+        [calbrecht@localhost: /var/www/htdocs/newsite/includes]$
+        export PS1="[\u@\h: \w]\$"
 
 
 3. Put the VCS branches in it.
 
-      [calbrecht@localhost(7.x-1.x): /var/www/htdocs/newsite/includes]$
-      export PS1="[\u@\h$(vcs_branch): \w]\$"
+        [calbrecht@localhost(7.x-1.x): /var/www/htdocs/newsite/includes]$
+        export PS1="[\u@\h$(vcs_branch): \w]\$"
 
 
 4. Spice it up with a little color.
 
-      [calbrecht@localhost(7.x-1.x): /var/www/htdocs/newsite/includes]$
-      export PS1="${BRIGHT_CYAN}[${CYAN}\u${BRIGHT_WHITE}@${CYAN}\h${WHITE}\$(vcs_branch)${WHITE}: \w${BRIGHT_CYAN}]${NORMAL}\$ ${RESET}"
+        [calbrecht@localhost(7.x-1.x): /var/www/htdocs/newsite/includes]$
+        export PS1="${BRIGHT_CYAN}[${CYAN}\u${BRIGHT_WHITE}@${CYAN}\h${WHITE}\$(vcs_branch)${WHITE}: \w${BRIGHT_CYAN}]${NORMAL}\$ ${RESET}"
 
 
 ### Advanced
