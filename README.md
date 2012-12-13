@@ -29,7 +29,7 @@ If you would like to customzize your prompt, add the following line
 under the previous one and use the brief tutorial below. (It might be helpful to
 copy the one from the bottom of the actual file to start.)
 
-export PS1="[\u@\h]\$"
+  export PS1="[\u@\h]\$"
 
 --------------------------------------------------------------------------------
 + Building Your Bash Prompt
@@ -41,33 +41,33 @@ UNIX COMMANDS
 -------------
 These will be replaced with their respective values.
 
-\u    Your username. (ex. calbrecht)
-\h    Your system hostname. (ex. localhost)
-\w    Your present working directory. (ex. /var/www/htdocs/website)
+  \u    Your username. (ex. calbrecht)
+  \h    Your system hostname. (ex. localhost)
+  \w    Your present working directory. (ex. /var/www/htdocs/website)
 
 COLORS
 ------
 These will alter the color of the text from this point forward.  Use the reset
 at the bottom to stop using the changed color.
 
-${BLACK}
-${RED}
-${GREEN}
-${YELLOW}
-${BLUE}
-${VIOLET}
-${CYAN}
-${WHITE}
-${BRIGHT_BLACK}
-${BRIGHT_RED}
-${BRIGHT_GREEN}
-${BRIGHT_YELLOW}
-${BRIGHT_BLUE}
-${BRIGHT_VIOLET}
-${BRIGHT_CYAN}
-${BRIGHT_WHITE}
-${NORMAL}
-${RESET}
+  ${BLACK}
+  ${RED}
+  ${GREEN}
+  ${YELLOW}
+  ${BLUE}
+  ${VIOLET}
+  ${CYAN}
+  ${WHITE}
+  ${BRIGHT_BLACK}
+  ${BRIGHT_RED}
+  ${BRIGHT_GREEN}
+  ${BRIGHT_YELLOW}
+  ${BRIGHT_BLUE}
+  ${BRIGHT_VIOLET}
+  ${BRIGHT_CYAN}
+  ${BRIGHT_WHITE}
+  ${NORMAL}
+  ${RESET}
 
 SVN and GIT
 -----------
@@ -113,5 +113,5 @@ to make it easier to deploy for newbies.
 
 You can also call either piece separately without any formatting:
 
-$(git_branch)
-$(svn_branch)
+  $(git_branch)
+  $(svn_branch)
