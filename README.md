@@ -6,6 +6,9 @@ your bash prompt.
 --------------------------------------------------------------------------------
 + Requirements
 --------------------------------------------------------------------------------
+- Version 1.x supports SVN up to version 1.6.  Version 2.x is in development to
+  support SVN 1.7.  If you do not use SVN, download either one!
+
 - If using SVN, your project must use a standard /trunk /branches /tags
   structure.
 
