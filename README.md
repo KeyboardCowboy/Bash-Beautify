@@ -1,18 +1,17 @@
 Bash Beautify, 2.x-DEV (NOT STABLE)
 ================================================================================
-## Version 2.x supports SVN 1.7 and higher.
+Version 2.x supports SVN 1.7 and higher.
+--------------------------------------------------------------------------------
 
 Bash Beautify adds simple color support and SVN and GIT branch recognition to
 your bash prompt.
 
+### Requirements
 --------------------------------------------------------------------------------
-+ Requirements
---------------------------------------------------------------------------------
-- If using SVN, your project must use a standard /trunk /branches /tags
+- If using SVN, your project must use a standard `/trunk /branches /tags`
   structure.
 
---------------------------------------------------------------------------------
-+ Installation
+### Installation
 --------------------------------------------------------------------------------
 1. Place the .bash_beautify file in your home directory.
 2. Add the following line to the top of your .bash_profile or .bashrc file.
@@ -30,13 +29,12 @@ copy the one from the bottom of the actual file to start.)
 
     export PS1="[\u@\h]\$"
 
---------------------------------------------------------------------------------
-+ Building Your Bash Prompt
+### Building Your Bash Prompt
 --------------------------------------------------------------------------------
 The bash prompt is really just a string with a few variables in it.  Here is a
 list of the basic variables you can use and how they work:
 
-UNIX COMMANDS
+#### UNIX COMMANDS
 -------------
 These will be replaced with their respective values.
 
@@ -44,7 +42,7 @@ These will be replaced with their respective values.
     \h    Your system hostname. (ex. localhost)
     \w    Your present working directory. (ex. /var/www/htdocs/website)
 
-COLORS
+#### COLORS
 ------
 These will alter the color of the text from this point forward.  Use the reset
 at the bottom to stop using the changed color.
@@ -68,7 +66,7 @@ at the bottom to stop using the changed color.
     ${NORMAL}
     ${RESET}
 
-SVN and GIT
+#### SVN and GIT
 -----------
 The icing on the cake.  Add this variable to your line and it will be replaced
 with "(GIT_BRANCH|SVN_BRANCH)" depending on which (or both if you are crazy
@@ -76,8 +74,7 @@ enough) version control system you are using.
 
     $(vcs_branch)
 
---------------------------------------------------------------------------------
-+ Examples
+### Examples
 --------------------------------------------------------------------------------
 1. A basic prompt.
 
@@ -103,8 +100,7 @@ enough) version control system you are using.
       export PS1="${BRIGHT_CYAN}[${CYAN}\u${BRIGHT_WHITE}@${CYAN}\h${WHITE}\$(vcs_branch)${WHITE}: \w${BRIGHT_CYAN}]${NORMAL}\$ ${RESET}"
 
 
---------------------------------------------------------------------------------
-+ Advanced
+### Advanced
 --------------------------------------------------------------------------------
 If you don't like the colors of the SVN and GIT branches, you can change those
 in the .bash_beautify file in the vcs_branches function.  I coded them in there
