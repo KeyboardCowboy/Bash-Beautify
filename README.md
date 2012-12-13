@@ -66,7 +66,7 @@ at the bottom to stop using the changed color.
 
 #### SVN and GIT
 The icing on the cake.  Add this variable to your line and it will be replaced
-with "`(GIT_BRANCH|SVN_BRANCH)`" depending on which (or both if you are crazy
+with `(GIT_BRANCH|SVN_BRANCH)` depending on which (or both if you are crazy
 enough) version control system you are using.
 
     $(vcs_branch)
@@ -100,7 +100,7 @@ enough) version control system you are using.
 ### Advanced
 --------------------------------------------------------------------------------
 If you don't like the colors of the SVN and GIT branches, you can change those
-in the `.bash_beautify` file in the vcs_branches function.  I coded them in there
+in the `.bash_beautify` file in the `vcs_branches` function.  I coded them in there
 to make it easier to deploy for newbies.
 
 You can also call either piece separately without any formatting:
