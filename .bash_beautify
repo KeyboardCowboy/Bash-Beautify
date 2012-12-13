@@ -97,12 +97,13 @@ function git_branch {
 # Get the current SVN branch
 ##
 function svn_branch {
-  if [ ! -d .svn ]; then
+  # Get the current URL of the SVN repo
+  URL=`svn info --xml 2> /dev/null | fgrep "<url>"`
+
+  # Check that the variable contains the url
+  if [[ "$URL" != *url* ]]; then
     exit 1
   fi
-
-  # Get the current URL of the SVN repo
-  URL=`svn info --xml | fgrep "<url>"`
 
   # Strip the tags
   URL=${URL/<url>/}
