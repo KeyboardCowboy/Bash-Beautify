@@ -13,10 +13,10 @@ your bash prompt.
 
 ### Installation
 --------------------------------------------------------------------------------
-1. Place the .bash_beautify file in your home directory.
-2. Add the following line to the top of your .bash_profile or .bashrc file.
+1. Place the `.bash_beautify` file in your home directory.
+2. Add the following line to the top of your `.bash_profile` or `.bashrc` file.
 
-      `source ~/.bash_beautify`
+        source ~/.bash_beautify
 
 That's it!  The next time you start a bash session you should see a pretty, new
 bash prompt.
@@ -35,7 +35,6 @@ The bash prompt is really just a string with a few variables in it.  Here is a
 list of the basic variables you can use and how they work:
 
 #### UNIX COMMANDS
--------------
 These will be replaced with their respective values.
 
     \u    Your username. (ex. calbrecht)
@@ -43,7 +42,6 @@ These will be replaced with their respective values.
     \w    Your present working directory. (ex. /var/www/htdocs/website)
 
 #### COLORS
-------
 These will alter the color of the text from this point forward.  Use the reset
 at the bottom to stop using the changed color.
 
@@ -67,9 +65,8 @@ at the bottom to stop using the changed color.
     ${RESET}
 
 #### SVN and GIT
------------
 The icing on the cake.  Add this variable to your line and it will be replaced
-with "(GIT_BRANCH|SVN_BRANCH)" depending on which (or both if you are crazy
+with "`(GIT_BRANCH|SVN_BRANCH)`" depending on which (or both if you are crazy
 enough) version control system you are using.
 
     $(vcs_branch)
@@ -78,32 +75,32 @@ enough) version control system you are using.
 --------------------------------------------------------------------------------
 1. A basic prompt.
 
-        [calbrecht@localhost]$
-        export PS1="[\u@\h]\$"
+        CODE:   export PS1="[\u@\h]\$"
+        RESULT: [calbrecht@localhost]$
 
 
 2. Add the present working directory to each prompt.
 
-        [calbrecht@localhost: /var/www/htdocs/newsite/includes]$
-        export PS1="[\u@\h: \w]\$"
+        CODE:   export PS1="[\u@\h: \w]\$"
+        RESULT: [calbrecht@localhost: /var/www/htdocs/newsite/includes]$
 
 
 3. Put the VCS branches in it.
 
-        [calbrecht@localhost(7.x-1.x): /var/www/htdocs/newsite/includes]$
-        export PS1="[\u@\h$(vcs_branch): \w]\$"
+        CODE:   export PS1="[\u@\h$(vcs_branch): \w]\$"
+        RESULT: [calbrecht@localhost(7.x-1.x): /var/www/htdocs/newsite/includes]$
 
 
 4. Spice it up with a little color.
 
-        [calbrecht@localhost(7.x-1.x): /var/www/htdocs/newsite/includes]$
-        export PS1="${BRIGHT_CYAN}[${CYAN}\u${BRIGHT_WHITE}@${CYAN}\h${WHITE}\$(vcs_branch)${WHITE}: \w${BRIGHT_CYAN}]${NORMAL}\$ ${RESET}"
+        CODE:   export PS1="${BRIGHT_CYAN}[${CYAN}\u${BRIGHT_WHITE}@${CYAN}\h${WHITE}\$(vcs_branch)${WHITE}: \w${BRIGHT_CYAN}]${NORMAL}\$ ${RESET}"
+        RESULT: [calbrecht@localhost(7.x-1.x): /var/www/htdocs/newsite/includes]$
 
 
 ### Advanced
 --------------------------------------------------------------------------------
 If you don't like the colors of the SVN and GIT branches, you can change those
-in the .bash_beautify file in the vcs_branches function.  I coded them in there
+in the `.bash_beautify` file in the vcs_branches function.  I coded them in there
 to make it easier to deploy for newbies.
 
 You can also call either piece separately without any formatting:
