@@ -32,33 +32,33 @@ export BG_NULL=00
 ##
 # ANSI Escape Commands
 ##
-export ESC="\033"
-export NORMAL="$ESC[m"
-export RESET="$ESC[${DULL};${FG_WHITE};${BG_NULL}m"
+export ESC="\[\e"
+export NORMAL="$ESC[m\]"
+export RESET="$ESC[${DULL};${FG_WHITE};${BG_NULL}m\]"
 
 ##
 # Shortcuts for Colored Text ( Bright and FG Only )
 ##
 
 # DULL TEXT
-export BLACK="$ESC[${DULL};${FG_BLACK}m"
-export RED="$ESC[${DULL};${FG_RED}m"
-export GREEN="$ESC[${DULL};${FG_GREEN}m"
-export YELLOW="$ESC[${DULL};${FG_YELLOW}m"
-export BLUE="$ESC[${DULL};${FG_BLUE}m"
-export VIOLET="$ESC[${DULL};${FG_VIOLET}m"
-export CYAN="$ESC[${DULL};${FG_CYAN}m"
-export WHITE="$ESC[${DULL};${FG_WHITE}m"
+export BLACK="$ESC[${DULL};${FG_BLACK}m\]"
+export RED="$ESC[${DULL};${FG_RED}m\]"
+export GREEN="$ESC[${DULL};${FG_GREEN}m\]"
+export YELLOW="$ESC[${DULL};${FG_YELLOW}m\]"
+export BLUE="$ESC[${DULL};${FG_BLUE}m\]"
+export VIOLET="$ESC[${DULL};${FG_VIOLET}m\]"
+export CYAN="$ESC[${DULL};${FG_CYAN}m\]"
+export WHITE="$ESC[${DULL};${FG_WHITE}m\]"
 
 # BRIGHT TEXT
-export BRIGHT_BLACK="$ESC[${BRIGHT};${FG_BLACK}m"
-export BRIGHT_RED="$ESC[${BRIGHT};${FG_RED}m"
-export BRIGHT_GREEN="$ESC[${BRIGHT};${FG_GREEN}m"
-export BRIGHT_YELLOW="$ESC[${BRIGHT};${FG_YELLOW}m"
-export BRIGHT_BLUE="$ESC[${BRIGHT};${FG_BLUE}m"
-export BRIGHT_VIOLET="$ESC[${BRIGHT};${FG_VIOLET}m"
-export BRIGHT_CYAN="$ESC[${BRIGHT};${FG_CYAN}m"
-export BRIGHT_WHITE="$ESC[${BRIGHT};${FG_WHITE}m"
+export BRIGHT_BLACK="$ESC[${BRIGHT};${FG_BLACK}m\]"
+export BRIGHT_RED="$ESC[${BRIGHT};${FG_RED}m\]"
+export BRIGHT_GREEN="$ESC[${BRIGHT};${FG_GREEN}m\]"
+export BRIGHT_YELLOW="$ESC[${BRIGHT};${FG_YELLOW}m\]"
+export BRIGHT_BLUE="$ESC[${BRIGHT};${FG_BLUE}m\]"
+export BRIGHT_VIOLET="$ESC[${BRIGHT};${FG_VIOLET}m\]"
+export BRIGHT_CYAN="$ESC[${BRIGHT};${FG_CYAN}m\]"
+export BRIGHT_WHITE="$ESC[${BRIGHT};${FG_WHITE}m\]"
 
 # REV TEXT as an example
 export REV_CYAN="$ESC[${DULL};${BG_WHITE};${BG_CYAN}m"
